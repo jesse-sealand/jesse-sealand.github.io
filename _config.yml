@@ -4,20 +4,31 @@ url:
 baseurl: 
 
 collections:
+  # Collections folders start with '_'
   pages:
     output: true
     permalink: /:name
+    
   posts:
     output: true
     permalink: /blog/:slug
+    
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /projects/:slug
+    
+  research:
+    output: true
+    permalink: /research/:slug
+    
+  competitions:
+    output: true
+    permalink: /competitions/:slug
 
 defaults:
   -
     scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
     values:
       layout: "default"
   -
@@ -38,6 +49,18 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "research"
+    values:
+      layout: "research"
+  -
+    scope:
+      path: ""
+      type: "competitions"
+    values:
+      layout: "competition"
 
 markdown: kramdown
 

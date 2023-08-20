@@ -1,0 +1,47 @@
+---
+layout: default
+title: Research
+subtitle: What I've been working on lately.
+description: Journal is a stunning personal blog Jekyll theme with an image-focused design.
+featured_image: /images/demo/demo-landscape.jpg
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.subtitle }}</p>
+
+	</div>
+
+</section>
+
+<section class="portfolio">
+
+	<div class="wrap">
+
+		{% for research in site.research reversed %}
+
+		<div class="portfolio-item">
+
+			<a class="portfolio-item__link" href="{{ research.url | relative_url }}">
+
+				<div class="portfolio-item__image" style="background-image: url({{ research.featured_image | relative_url }});"></div>
+
+				<div class="portfolio-item__content">
+					<div class="portfolio-item__info">
+						<h2 class="portfolio-item__title">{{ research.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ research.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+</section>

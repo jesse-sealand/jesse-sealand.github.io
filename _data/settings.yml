@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Journal
+  site_title: Jesse Sealand
   site_tagline: A stunning personal blog Jekyll theme with an image-focused design.
   favicon_image: /images/favicon.png
 
@@ -14,6 +14,10 @@ menu_settings:
       url: '/'
     - title: 'Projects'
       url: '/projects/'
+    - title: 'Research'
+      url: '/research/'
+    - title: 'Competitions'
+      url: '/competitions/'
     - title: 'About'
       url: '/about'
     - title: 'Contact'
@@ -46,7 +50,7 @@ social_settings:
   dribbble_url: ''
   behance_url: ''
   deviantart_url: ''
-  github_url: ''
+  github_url: 'https://github.com/jesse-sealand'
   reddit_url: ''
   flickr_url: ''
   etsy_url: ''
@@ -54,7 +58,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/in/jessesealand'
 
 color_settings:
   background_color: '#ffffff'
