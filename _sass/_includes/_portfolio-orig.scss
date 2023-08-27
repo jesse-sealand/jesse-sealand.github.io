@@ -59,10 +59,10 @@
 }
 
 .portfolio-item__image {
-	display: flex;
-	#width: 100%;
-	#height: 0;
-	padding-bottom: 0%;
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -79,8 +79,8 @@
 	justify-content: center;
 	background: rgba($overlay-background-color, $overlay-opacity);
 
-	opacity: 1;
-	visibility: visible;
+	opacity: 0;
+	visibility: hidden;
 	@include transition(all 0.2s ease-in-out);
 }
 

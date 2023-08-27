@@ -4,9 +4,9 @@ basic_settings:
   favicon_image: /images/favicon.png
 
 header_settings:
-  logo_image: 
-  logo_width: 200
-  overlay_opacity: 0.7
+  logo_image: "/images/bitmoji-2023-08-27.png?raw=true"
+  logo_width: 300
+  overlay_opacity: 0.3
 
 menu_settings:
   menu_items:
@@ -41,7 +41,7 @@ social_settings:
   google-plus_url: ''
   vimeo_url: ''
   pinterest_url: ''
-  medium_url: ''
+  medium_url: 'https://medium.com/@jesse.sealand'
   quora_url: ''
   amazon_url: ''
   apple_url: ''

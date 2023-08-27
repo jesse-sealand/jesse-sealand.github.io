@@ -2,6 +2,8 @@ site: Journal Jekyll Theme
 
 url: 
 baseurl: 
+logo: "/images/bitmoji-2023-08-27.png?raw=true" # your photo (or logo) here
+email: jesse.sealand@outlook.com
 
 collections:
   # Collections folders start with '_'
