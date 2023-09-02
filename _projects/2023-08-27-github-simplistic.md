@@ -2,7 +2,7 @@
 title: 'simplistic'
 subtitle: 'A base class for wrapping cli commands'
 date: 2023-08-07 00:00:00
-featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/abstract-paper-1600-400.svg" width="100%"'
+featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/abstract-paper-1600-400.svg" width="100%">'
 ---
 
 
