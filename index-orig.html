@@ -5,10 +5,6 @@ description: Journal is a stunning personal blog Jekyll theme with an image-focu
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-<br>
-<br>
-<div class="blog-header"><h1>Latest Blog Posts</h1></div>
-
 <section class="blog single">
 
 	<div class="wrap">
@@ -16,18 +12,20 @@ featured_image: /images/demo/demo-landscape.jpg
 		{% for post in paginator.posts %}
 
 		<article class="blog-post">
-			{% if post.featured_image %}
-			<a href="{{ post.source_link }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
-			{% endif %}
-			
+
 			<div class="blog-post__header">
-				<br>
+				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
-				<h3 class="blog-post__title"><a href="{{ post.source_link }}">{{ post.title }}</a></h3>
-				<p class="blog-post__summary">{{ post.summary }}</p>
 			</div>
 
+			{% if post.featured_image %}
+			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
+			{% endif %}
 
+			<div class="blog-post__content">
+				<p>{{ post.excerpt }}</p>
+				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a>
+			</div>
 
 		</article>
 
