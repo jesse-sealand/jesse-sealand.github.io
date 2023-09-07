@@ -6,42 +6,49 @@ description: Journal is a stunning personal blog Jekyll theme with an image-focu
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-<section class="intro">
+<br>
+<br>
+<div class="blog-header"><h1>Latest Projects</h1></div>
 
-	<div class="wrap">
+<section class="projectcards-wrapper">
 
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.subtitle }}</p>
+	{% for project in site.projects reversed %}
 
-	</div>
-
-</section>
-
-<section class="portfolio">
-
-	<div class="wrap">
-
-		{% for project in site.projects reversed %}
-
-		<div class="portfolio-item">
-
-			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
-
-				<div class="portfolio-item__image" style="background-image: url({{ project.featured_image | relative_url }});"></div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ project.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
+	<div class="projectcard-grid-space"">
+		{% if project.featured_image %}
+			<a href="{{ project.url | relative_url }}" class="projectcard" style="background-image: url({{ project.featured_image | absolute_url }});">
+		{% endif %}
+		
+		<div>
+			<h1>{{ project.title }}</h1>
+			<p>{{ project.summary }}</p>
+			<div class="date">{{ project.date | date_to_long_string }}</div>
+			<div class="tags">
+			  <div class="tag">HTML</div>
+			</div>
 		</div>
+		</a>
+	 </div>
 
-		{% endfor %}
-
-	</div>
+	{% endfor %}
 
 </section>
+
+{% if paginator.total_pages > 1 %}
+
+<section class="pagination">
+
+	{% if paginator.previous_page %}
+	<div class="pagination__prev">
+		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
+	</div>
+	{% endif %}
+	{% if paginator.next_page %}
+	<div class="pagination__next">
+		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+	</div>
+	{% endif %}
+
+</section>
+
+{% endif %}

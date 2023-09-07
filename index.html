@@ -9,13 +9,13 @@ featured_image: /images/demo/demo-landscape.jpg
 <br>
 <div class="blog-header"><h1>Latest Blog Posts</h1></div>
 
-<section class="cards-wrapper">
+<section class="blogcards-wrapper">
 
 	{% for post in paginator.posts %}
 
-	<div class="card-grid-space"">
+	<div class="blogcard-grid-space"">
 		{% if post.featured_image %}
-			<a href="{{ post.source_link }}" class="card" style="background-image: url({{ post.featured_image | relative_url }});">
+			<a href="{{ post.source_link }}" class="blogcard" style="background-image: url({{ post.featured_image | relative_url }});">
 		{% endif %}
 		
 		<div>

@@ -1,8 +1,8 @@
 ---
 title: 'Reggia'
-subtitle: 'A pythonic-style library that makes regular expressions (regex) simple.'
 date: 2023-08-07 00:00:00
-featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/abstract-paper-1600-400-thiel.svg" width="100%"'
+featured_image: "images/abstract-paper-1600-400-thiel.svg"
+summary: 'A pythonic-style library that makes regular expressions (regex) simple.'
 ---
 
 
