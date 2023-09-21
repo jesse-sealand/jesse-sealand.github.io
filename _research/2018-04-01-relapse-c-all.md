@@ -2,7 +2,7 @@
 title: "Prediction of Relapse in Childhood Acute Lymphoblastic Leukemia"
 subtitle: "Conference: Pennsylvania Computer and Information Science Educators (PACISE)"
 date: 2018-06-01 00:00:00
-featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/research-section-background.svg" width="100%"'
+featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/blue-lattice.png" width="100%"'
 ---
 
 

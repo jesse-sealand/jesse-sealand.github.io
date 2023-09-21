@@ -17,22 +17,23 @@ featured_image: /images/demo/demo-landscape.jpg
 
 </section>
 
-<section class="portfolio">
+<section class="portfolio_research">
 
 	<div class="wrap">
 
 		{% for research in site.research reversed %}
+		<hr style="height:2px;border-width:0;color:gray;background-color:#00006e">
+		
+		<div class="portfolio_research-item">
 
-		<div class="portfolio-item">
+			<a class="portfolio_research-item__link" href="{{ research.url | relative_url }}">
 
-			<a class="portfolio-item__link" href="{{ research.url | relative_url }}">
+				<div class="portfolio_research-item__image" style="background-image: url({{ research.featured_image | relative_url }});"></div>
 
-				<div class="portfolio-item__image" style="background-image: url({{ research.featured_image | relative_url }});"></div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ research.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ research.subtitle }}</p>
+				<div class="portfolio_research-item__content">
+					<div class="portfolio_research-item__info">
+						<h2 class="portfolio_research-item__title" style="color:#465885;">{{ research.title }}</h2>
+						<p class="portfolio_research-item__subtitle"style="color:#4b73d8;"> {{ research.subtitle }}</p>
 					</div>
 				</div>
 

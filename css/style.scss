@@ -157,4 +157,4 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 @import "_includes/_cards_blog";
 // @import "_includes/_cards_competition";
 @import "_includes/_cards_project";
-// @import "_includes/_cards_research";
+@import "_includes/_portfolio_research";

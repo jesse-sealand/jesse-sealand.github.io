@@ -1,8 +1,9 @@
 ---
 title: 'simplistic'
-date: 2023-08-07 00:00:00
-featured_image: "images/abstract-paper-1600-400.svg"
+date: 2023-08-23 00:00:00
+featured_image: "images/projects/padded-default-4C6592-1000-1000.png"
 summary: A base class for wrapping cli commands
+tags: Python
 ---
 
 

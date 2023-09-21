@@ -1,8 +1,8 @@
 ---
-title: 'Reggia'
-date: 2023-08-25 00:00:00
-featured_image: "images/projects/padded-default-8B4C92-1000-1000.png"
-summary: 'A pythonic-style library that makes regular expressions (regex) simple.'
+title: 'Hypervise'
+date: 2023-08-31 00:00:00
+featured_image: "images/projects/padded-default-92514C-1000-1000.png"
+summary: 'A user-friendly virtual environment manager for Python.'
 tags: Python
 ---
 

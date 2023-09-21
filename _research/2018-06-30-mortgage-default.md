@@ -2,7 +2,7 @@
 title: "Short-term Prediction of Mortgage Default"
 subtitle: "Master's Thesis, Slippery Rock University"
 date: 2018-06-01 00:00:00
-featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/research-section-background.svg" width="100%"'
+featured_image: 'https://github.com/jesse-sealand/reggia"><img src="images/blue-lattice.png" width="100%"'
 ---
 
 
