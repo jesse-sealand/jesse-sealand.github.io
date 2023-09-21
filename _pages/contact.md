@@ -1,10 +1,20 @@
 ---
-title: Contact
-subtitle: Journal comes with a built-in contact form, that's free and easy to set up.
-description: A stunning personal blog Jekyll theme with an image-focused design.
+title: Contact me
+subtitle: Your message will first go through an elaborate Rube Goldberg machine before delivery.
+description: 
 featured_image: /images/demo/demo-portrait.jpg
 ---
 
 {% include contact-form.html %}
 
-We've made a contact form that you can use with [Formspree](https://formspree.io/create/jekyllthemes) to handle up to 50 submissions per month for free. You could also easily switch out the end-point to use another contact form service.
+**How your message will be handled**:
+
+After you click **Send Message** here are a few steps on its journey.
+
+
+ -- It will be converted into an IBM punchcard and faxed to the University of Chicago Computer Science department for decoding back into text.
+
+
+ -- At one point a photo will be taken with a 0.5 MP camera and uploaded to Amazon Turks for image to text transcription.
+
+ You get the idea.

@@ -5,7 +5,7 @@ basic_settings:
 
 header_settings:
   logo_image: "/images/bitmoji-2023-08-27.png?raw=true"
-  logo_width: 300
+  logo_width: 200
   overlay_opacity: 0.3
 
 menu_settings:
@@ -27,7 +27,7 @@ grid_settings:
   grid_spacing: 10
 
 contact_settings:
-  form_action: ''
+  form_action: 'https://formspree.io/f/xqkvyykk'
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
