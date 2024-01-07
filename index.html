@@ -23,7 +23,9 @@ featured_image: /images/demo/demo-landscape.jpg
 			<p>{{ post.summary }}</p>
 			<div class="date">{{ post.date | date_to_long_string }}</div>
 			<div class="tags">
-			  <div class="tag">{{ post.tags }}</div>
+				{% for post_tag in post.tags %}
+					<div class="tag">{{ post_tag }}</div>
+				{% endfor %}
 			</div>
 		</div>
 		</a>
